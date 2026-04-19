@@ -332,3 +332,296 @@ a:hover {
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
 }
+
+/* Responsive Design */
+
+/* General responsive rules */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+    .food-munch-logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .banner-bg-container {
+        height: 80vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-heading {
+        font-size: 32px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .banner-paragraph {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .banner-bg-container > div:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .banner-view-button,
+    .banner-order-button {
+        height: 45px;
+        width: 140px;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .WCU-section {
+        padding: 20px 0;
+    }
+
+    .WCU-section-heading {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .WCU-section-description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .WCU-Section-Card {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .WCU-Section-Card-title {
+        font-size: 18px;
+    }
+
+    .WCU-Section-Card-description {
+        font-size: 14px;
+    }
+
+    .EM-section {
+        padding: 20px 0;
+    }
+
+    .EM-section-heading {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .menu-item {
+        margin-bottom: 20px;
+    }
+
+    .Menu-title {
+        font-size: 16px;
+        margin-top: 16px;
+        text-align: center;
+    }
+
+    .Menu-item-link {
+        font-size: 12px;
+    }
+
+    .Healthy-food-section {
+        padding: 20px 0;
+    }
+
+    .Healthy-food-section-img {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .Healthy-food-section-heading {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .Healthy-food-section-about {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .Healthy-food-section-button {
+        width: 140px;
+        font-size: 16px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .delivery-and-payment-section {
+        padding: 20px 0;
+    }
+
+    .delivery-and-payment-section-img {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .delivery-and-payment-section-heading {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .delivery-and-payment-section-about {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .delivery-and-payment-section-button {
+        width: 140px;
+        font-size: 16px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .payment-card-img {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .thanking-cus-section {
+        padding: 20px 0;
+    }
+
+    .thanking-cus-section-heading {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .thanking-cus-section-about {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .thanking-cus-section-button {
+        width: 140px;
+        font-size: 16px;
+        display: block;
+        margin: 15px auto 0;
+    }
+
+    .thanking-cus-section-img {
+        width: 250px;
+    }
+
+    .follow-us-section {
+        padding: 20px 0;
+    }
+
+    .follow-us-section-heading {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .follow-us-section-item {
+        height: 60px;
+        width: 60px;
+        padding-top: 15px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+
+    .footer-section {
+        padding: 20px 0;
+    }
+
+    .footer-section-logo {
+        height: 100px;
+        padding: 15px;
+    }
+
+    .footer-section-address,
+    .footer-section-email {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* Tablet Styles (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .banner-bg-container {
+        height: 90vh;
+    }
+
+    .banner-heading {
+        font-size: 40px;
+    }
+
+    .banner-paragraph {
+        font-size: 20px;
+    }
+
+    .WCU-section-heading,
+    .EM-section-heading,
+    .Healthy-food-section-heading,
+    .delivery-and-payment-section-heading,
+    .thanking-cus-section-heading {
+        font-size: 26px;
+    }
+
+    .Healthy-food-section-img,
+    .delivery-and-payment-section-img,
+    .thanking-cus-section-img {
+        width: 280px;
+    }
+
+    .follow-us-section-heading {
+        font-size: 32px;
+    }
+
+    .follow-us-section-item {
+        margin-right: 15px;
+    }
+}
+
+/* Large Desktop Styles (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .banner-heading {
+        font-size: 50px;
+    }
+
+    .banner-paragraph {
+        font-size: 26px;
+    }
+
+    .WCU-section-heading,
+    .EM-section-heading,
+    .Healthy-food-section-heading,
+    .delivery-and-payment-section-heading,
+    .thanking-cus-section-heading {
+        font-size: 32px;
+    }
+
+    .Healthy-food-section-img,
+    .delivery-and-payment-section-img,
+    .thanking-cus-section-img {
+        width: 350px;
+    }
+
+    .follow-us-section-heading {
+        font-size: 40px;
+    }
+
+    .icon {
+        font-size: 40px;
+    }
+
+    .follow-us-section-item {
+        height: 90px;
+        width: 90px;
+        padding-top: 25px;
+    }
+}
