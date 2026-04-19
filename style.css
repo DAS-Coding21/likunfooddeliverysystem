@@ -3,25 +3,56 @@
 /* NavbarSection */
 
 .food-munch-logo {
-    height: 70px;
-    width: 70px;
-}
-
-#m-content {
-    margin-left: auto;
-
+    height: 60px;
+    width: 60px;
+    /* margin: 0px 0px 0px 20px; */
 }
 
 a {
     color: #183b56;
     font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    transition: text-shadow 0.3s ease;
+    /* margin-right: 20px; */
 }
 
 a:hover {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
+
+/* Default hamburger */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' ...hamburger path... %3C/svg%3E");
+}
+
+/* Cross icon when expanded */
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' ...cross path... %3C/svg%3E");
+}
+
+/* Remove Bootstrap's default hamburger background */
+.navbar-toggler-icon {
+  background-image: none !important;
+}
+
+/* Show hamburger when collapsed */
+.navbar-toggler .navbar-toggler-icon::before {
+  content: "☰"; /* hamburger */
+  font-size: 24px;
+  line-height: 1;        /* keeps it centered */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Show cross when expanded */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  content: "✖"; /* cross */
+}
+
+
+
 
 /* Banner Section */
 
@@ -35,14 +66,14 @@ a:hover {
 .banner-heading {
     color: #ffffff;
     font-size: 45px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
 
 .banner-paragraph {
     color: #ffffff;
     font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
@@ -74,13 +105,13 @@ a:hover {
 .WCU-section-heading {
     color: #183b56;
     font-size: 28px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
 .WCU-section-description {
     color: #5a7184;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
 
@@ -95,13 +126,13 @@ a:hover {
 .WCU-Section-Card-title {
     color: #3234fb;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
 .WCU-Section-Card-description {
     color: #7b8794;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
@@ -115,7 +146,6 @@ a:hover {
     color: #323f4b;
     font-weight: 600;
     font-style: italic;
-    /* border: 1px solid ; */
 }
 
 /* Explore Menu Section */
@@ -127,7 +157,7 @@ a:hover {
 .EM-section-heading {
     color: #183b56;
     font-size: 28px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
@@ -136,15 +166,12 @@ a:hover {
 }
 
 .Menu-item-img {
-    /* border: 1px solid black; */
-    /* height: 304px; */
-    /* width: 290px; */
     border-radius: 16px;
 }
 
 .Menu-title {
     color: #323f4b;
-    font-family: 'Times New Roman', Times, serif;
+   font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
     margin-top: 24px;
@@ -152,7 +179,7 @@ a:hover {
 
 .Menu-item-link {
     color: #d0b200;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
@@ -172,7 +199,7 @@ a:hover {
     color: #183b56;
     font-size: 28px;
     font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     padding: 5px;
 }
 
@@ -190,11 +217,10 @@ a:hover {
     width: 130px;
     padding: 5px 10px;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     border: 0;
     border-radius: 8px;
-    /* margin-left: 10px; */
 }
 
 /* Delivery & Payment Section */
@@ -211,7 +237,7 @@ a:hover {
     color: #183b56;
     font-size: 28px;
     font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     padding: 5px;
 }
 
@@ -229,7 +255,7 @@ a:hover {
     width: 130px;
     padding: 5px 10px;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     border: 0;
     border-radius: 8px;
@@ -253,15 +279,13 @@ a:hover {
     color: #183b56;
     font-size: 28px;
     font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-    /* padding: 5px; */
+    font-family: 'Roboto', sans-serif;
 }
 
 .thanking-cus-section-about {
     color: #5a7184;
     font-size: 18px;
     font-weight: 600;
-    /* padding: 5px; */
 }
 
 .thanking-cus-section-button {
@@ -271,7 +295,7 @@ a:hover {
     width: 130px;
     padding: 5px 10px;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     border: 0;
     border-radius: 8px;
@@ -296,7 +320,7 @@ a:hover {
 
 .follow-us-section-heading {
     font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     padding-bottom: 20px;
 }
@@ -321,7 +345,7 @@ a:hover {
 .footer-section-address {
     color: #7b8794;
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     padding: 10px;
 }
@@ -329,13 +353,18 @@ a:hover {
 .footer-section-email {
     color: #7b8794;
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
+
+
+
+
 
 /* Responsive Design */
 
 /* General responsive rules */
+
 img {
     max-width: 100%;
     height: auto;
@@ -346,10 +375,15 @@ img {
     .food-munch-logo {
         height: 50px;
         width: 50px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    a{
+        margin-left: 20px;
     }
 
     .banner-bg-container {
-        height: 80vh;
+        height: 90vh;
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -552,6 +586,10 @@ img {
 
 /* Tablet Styles (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
+    a{
+        margin-left: 20px;
+    }
+
     .banner-bg-container {
         height: 90vh;
     }
@@ -589,6 +627,14 @@ img {
 
 /* Large Desktop Styles (min-width: 1200px) */
 @media (min-width: 1200px) {
+    .food-munch-logo{
+        margin: 0px 0px 0px 20px;
+    }
+
+    a{
+        margin-right: 20px;
+    }
+    
     .banner-heading {
         font-size: 50px;
     }
