@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* NavbarSection */
+
+.food-munch-logo {
+    height: 70px;
+    width: 70px;
+}
+
+#m-content {
+    margin-left: auto;
+
+}
+
+a {
+    color: #183b56;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+a:hover {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Banner Section */
+
+.banner-bg-container {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner-heading {
+    color: #ffffff;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+
+.banner-paragraph {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.banner-view-button {
+    height: 45px;
+    width: 130px;
+    color: white;
+    background-color: #d0b200;
+    border-radius: 8px;
+    border-width: 0;
+    margin-right: 10px;
+}
+
+.banner-order-button {
+    height: 45px;
+    width: 130px;
+    color: #d0b200;
+    background-color: transparent;
+    border: 1px solid #d0b200;
+    border-radius: 8px;
+}
+
+/* Why Choose Us Section */
+
+.WCU-section {
+    background-color: #f9fbfe;
+}
+
+.WCU-section-heading {
+    color: #183b56;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.WCU-section-description {
+    color: #5a7184;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.WCU-Section-Card {
+    background-color: white;
+    border: 1px solid #e5eaf4;
+    border-radius: 16px;
+    text-align: center;
+
+}
+
+.WCU-Section-Card-title {
+    color: #3234fb;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.WCU-Section-Card-description {
+    color: #7b8794;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.WCU-Section-Card-img {
+    height: 90px;
+    width: 87px;
+    margin: 10px;
+}
+
+.discount {
+    color: #323f4b;
+    font-weight: 600;
+    font-style: italic;
+    /* border: 1px solid ; */
+}
+
+/* Explore Menu Section */
+
+.EM-section {
+    background-color: white;
+}
+
+.EM-section-heading {
+    color: #183b56;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.menu-item {
+    border-radius: 16px;
+}
+
+.Menu-item-img {
+    /* border: 1px solid black; */
+    /* height: 304px; */
+    /* width: 290px; */
+    border-radius: 16px;
+}
+
+.Menu-title {
+    color: #323f4b;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.Menu-item-link {
+    color: #d0b200;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Healthy Food Section */
+
+.Healthy-food-section {
+    background-color: #f5f5f5;
+}
+
+.Healthy-food-section-img {
+    width: 300px;
+}
+
+.Healthy-food-section-heading {
+    color: #183b56;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+
+.Healthy-food-section-about {
+    color: #5a7184;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.Healthy-food-section-button {
+    color: #ffffff;
+    background-color: #d0b200;
+    height: 50px;
+    width: 130px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    border: 0;
+    border-radius: 8px;
+    /* margin-left: 10px; */
+}
+
+/* Delivery & Payment Section */
+
+.delivery-and-payment-section {
+    background-color: #f9fbfe;
+}
+
+.delivery-and-payment-section-img {
+    width: 300px;
+}
+
+.delivery-and-payment-section-heading {
+    color: #183b56;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+
+.delivery-and-payment-section-about {
+    color: #5a7184;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.delivery-and-payment-section-button {
+    color: #ffffff;
+    background-color: #d0b200;
+    height: 50px;
+    width: 130px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    border: 0;
+    border-radius: 8px;
+}
+
+.payment-card-img {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+}
+
+
+/* Thanking Us Section */
+
+.thanking-cus-section {
+    background-color: #d0b2001a;
+}
+
+
+.thanking-cus-section-heading {
+    color: #183b56;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    /* padding: 5px; */
+}
+
+.thanking-cus-section-about {
+    color: #5a7184;
+    font-size: 18px;
+    font-weight: 600;
+    /* padding: 5px; */
+}
+
+.thanking-cus-section-button {
+    color: #ffffff;
+    background-color: #d0b200;
+    height: 50px;
+    width: 130px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.thanking-cus-section-img {
+    width: 300px;
+}
+
+
+/* Follow Us Section */
+
+.follow-us-section {
+    background-color: #fff3cd;
+}
+
+.icon {
+    font-size: 35px;
+    color: #d0b200;
+}
+
+.follow-us-section-heading {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.follow-us-section-item {
+    background-color: #ebe8dd;
+    height: 80px;
+    width: 80px;
+    padding-top: 21px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+
+/* Footer Section */
+
+.footer-section-logo {
+    height: 150px;
+    padding: 20px;
+}
+
+.footer-section-address {
+    color: #7b8794;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.footer-section-email {
+    color: #7b8794;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
