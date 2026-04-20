@@ -78,22 +78,44 @@ a:hover {
 }
 
 .banner-view-button {
-    height: 45px;
-    width: 130px;
+    /* height: 45px;
+    width: 130px; */
     color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 12px 24px;
     background-color: #d0b200;
     border-radius: 8px;
     border-width: 0;
     margin-right: 10px;
+    transition: all 0.2s ease;
+}
+
+.banner-view-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.6);
 }
 
 .banner-order-button {
-    height: 45px;
-    width: 130px;
+    /* height: 45px;
+    width: 130px; */
     color: #d0b200;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 12px 24px;
     background-color: transparent;
     border: 1px solid #d0b200;
     border-radius: 8px;
+    transition: all 0.2s ease-in;
+}
+
+.banner-order-button:hover {
+    /* border: 2px solid #0056b3; */
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.6);
+
+    transform: translateY(-3px);
 }
 
 /* Why Choose Us Section */
@@ -120,12 +142,23 @@ a:hover {
     border: 1px solid #e5eaf4;
     border-radius: 16px;
     text-align: center;
+    max-height: 300px;
+    transition: all 0.3s ease;
+}
 
+.WCU-Section-Card:hover{
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+
+.extra-padding{
+    padding-bottom: 70px;
 }
 
 .WCU-Section-Card-title {
     color: #3234fb;
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
@@ -133,7 +166,7 @@ a:hover {
 .WCU-Section-Card-description {
     color: #7b8794;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .WCU-Section-Card-img {
@@ -423,18 +456,20 @@ img {
     }
 
     .WCU-section-heading {
-        font-size: 24px;
-        text-align: center;
+        font-size: 26px;
+        /* text-align: center; */
     }
 
     .WCU-section-description {
-        font-size: 16px;
-        text-align: center;
+        font-size: 18px;
+        padding-bottom: 15px;
+        /* text-align: center; */
     }
 
     .WCU-Section-Card {
         margin-bottom: 20px;
         padding: 15px;
+        
     }
 
     .WCU-Section-Card-title {
@@ -442,7 +477,7 @@ img {
     }
 
     .WCU-Section-Card-description {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .EM-section {
@@ -607,7 +642,7 @@ img {
     .Healthy-food-section-heading,
     .delivery-and-payment-section-heading,
     .thanking-cus-section-heading {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .Healthy-food-section-img,
