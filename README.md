@@ -15,6 +15,8 @@
 - Adjusting font-size
 
 ## Explore Menu Section
-- Removing class name from menu-item div
-- Adding non-veg-staters-section
-- 
+- Removing class name from menu-item div and adding hover effect
+- Adding non-veg-staters-section and it's styling
+- Small changes in small screen-size device
+- Adding Public folder for images 
+- Adding JAVASCRIPT file 
