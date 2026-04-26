@@ -18,37 +18,44 @@ a {
 }
 
 a:hover {
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: #4169e1 !important;
+}
+
+a:hover svg {
+    fill: #4169e1;
 }
 
 
 /* Default hamburger */
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' ...hamburger path... %3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' ...hamburger path... %3C/svg%3E");
 }
 
 /* Cross icon when expanded */
 .navbar-toggler.collapsed .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' ...cross path... %3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' ...cross path... %3C/svg%3E");
 }
 
 /* Remove Bootstrap's default hamburger background */
 .navbar-toggler-icon {
-  background-image: none !important;
+    background-image: none !important;
 }
 
 /* Show hamburger when collapsed */
 .navbar-toggler .navbar-toggler-icon::before {
-  content: "☰"; /* hamburger */
-  font-size: 24px;
-  line-height: 1;        /* keeps it centered */
-  display: inline-block;
-  vertical-align: middle;
+    content: "☰";
+    /* hamburger */
+    font-size: 24px;
+    line-height: 1;
+    /* keeps it centered */
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Show cross when expanded */
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
-  content: "✖"; /* cross */
+    content: "✖";
+    /* cross */
 }
 
 
@@ -146,14 +153,18 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-.WCU-Section-Card:hover{
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+.WCU-Section-Card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
 }
 
 
-.extra-padding{
-    padding-bottom: 70px;
+.fresh-food-extra-padding {
+    padding-bottom: 18px;
+}
+
+.best-offer-extra-padding {
+    padding-bottom: 45px;
 }
 
 .WCU-Section-Card-title {
@@ -192,19 +203,26 @@ a:hover {
     font-size: 28px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    padding-bottom: 10px;
 }
 
 .menu-item {
     border-radius: 16px;
+    transition: all 0.4s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
 }
 
 .Menu-item-img {
+    width: 100%;
     border-radius: 16px;
 }
 
 .Menu-title {
     color: #323f4b;
-   font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
     margin-top: 24px;
@@ -217,6 +235,68 @@ a:hover {
     font-weight: 500;
     text-decoration: none;
 }
+
+
+/* Non-veg-staters-section */
+.non-veg-staters-section{
+    display: none;
+}
+
+.non-veg-staters-section-heading{
+    color: #183b56;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.non-veg-staters-section-para{
+    color: #7b8794;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.non-veg-staters-section-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.non-veg-staters-section-card:hover{
+    transform: translateY(-5px);
+}
+
+
+.non-veg-staters-section-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.non-veg-staters-section-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.non-veg-staters-section-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.non-veg-staters-section-card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.non-veg-staters-section-card button:hover{
+    background-color: #d62828;
+}
+
 
 /* Healthy Food Section */
 
@@ -411,7 +491,7 @@ img {
         margin: 0px 0px 0px 0px;
     }
 
-    a{
+    a {
         margin-left: 20px;
     }
 
@@ -436,7 +516,7 @@ img {
         text-align: center;
     }
 
-    .banner-bg-container > div:last-child {
+    .banner-bg-container>div:last-child {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -457,19 +537,17 @@ img {
 
     .WCU-section-heading {
         font-size: 26px;
-        /* text-align: center; */
     }
 
     .WCU-section-description {
         font-size: 18px;
         padding-bottom: 15px;
-        /* text-align: center; */
     }
 
     .WCU-Section-Card {
         margin-bottom: 20px;
         padding: 15px;
-        
+
     }
 
     .WCU-Section-Card-title {
@@ -485,22 +563,42 @@ img {
     }
 
     .EM-section-heading {
-        font-size: 24px;
-        text-align: center;
+        font-size: 28px;
+        padding: 0px 0px 10px 38px;
     }
 
     .menu-item {
         margin-bottom: 20px;
+        margin: 0 35px;
     }
 
     .Menu-title {
         font-size: 16px;
-        margin-top: 16px;
-        text-align: center;
+        margin-top: 14px;
+        margin-bottom: 5px;
+        padding-left: 12px;
     }
 
     .Menu-item-link {
-        font-size: 12px;
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+
+    .non-veg-staters-section-heading{
+        font-size: 26px;
+        padding: 0 0 0 25px;
+        margin-bottom: 10px;
+    }
+
+    .non-veg-staters-section-para{
+        font-size: 18px;
+        padding: 0 8px 0 25px;
+    }
+
+    .non-veg-staters-section-card{
+        margin: 0 20px;
+        margin-bottom: 20px;
     }
 
     .Healthy-food-section {
@@ -621,7 +719,7 @@ img {
 
 /* Tablet Styles (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
-    a{
+    a {
         margin-left: 20px;
     }
 
@@ -645,6 +743,19 @@ img {
         font-size: 28px;
     }
 
+    .Menu-title {
+        font-size: 16px;
+        margin-top: 14px;
+        margin-bottom: 5px;
+        padding-left: 12px;
+    }
+
+    .Menu-item-link {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+
     .Healthy-food-section-img,
     .delivery-and-payment-section-img,
     .thanking-cus-section-img {
@@ -662,14 +773,14 @@ img {
 
 /* Large Desktop Styles (min-width: 1200px) */
 @media (min-width: 1200px) {
-    .food-munch-logo{
+    .food-munch-logo {
         margin: 0px 0px 0px 20px;
     }
 
-    a{
+    a {
         margin-right: 20px;
     }
-    
+
     .banner-heading {
         font-size: 50px;
     }
@@ -689,7 +800,7 @@ img {
     .Healthy-food-section-img,
     .delivery-and-payment-section-img,
     .thanking-cus-section-img {
-        width: 350px;
+        /* width: 350px; */
     }
 
     .follow-us-section-heading {

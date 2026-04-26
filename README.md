@@ -14,5 +14,7 @@
 - Adding hover effect and extra padding on card container
 - Adjusting font-size
 
-
-
+## Explore Menu Section
+- Removing class name from menu-item div
+- Adding non-veg-staters-section
+- 
